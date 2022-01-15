@@ -1,21 +1,5 @@
 <!-- <app-hello> is only visible to components within pages/home -->
 
-class {
-  onCreate() {
-    this.state = {
-      count: 0
-    }
-  }
-
-  onMount() {
-    console.log("Mounted in the browser!");
-  }
-
-  increment() {
-    this.state.count++;
-  }
-}
-
 style {
     .count {
         color:#09c;
@@ -36,3 +20,10 @@ style {
 <button.example-button type="button" on-click("increment")>
   Click me
 </button>
+
+<div>
+  <input type="text" key="username" value=state.username on-input('handleUsername')>
+  <button.example-button type="button" on-click("submit")>
+    Submit
+  </button>
+</div>
